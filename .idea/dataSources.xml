@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourceManagerImpl" format="xml" hash="1730201491">
+    <data-source source="LOCAL" name="Rails marketplace: development" uuid="27082263-7fba-41aa-8872-e6636a8cab00">
+      <driver-ref>mysql</driver-ref>
+      <auto-commit>false</auto-commit>
+      <jdbc-driver>com.mysql.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mysql://127.0.0.1/market_place_dev</jdbc-url>
+      <user-name>any_dev</user-name>
+      <user-password>dfcbdfc4dfd3dff5dfcedfcfdfdcdff5dfdadfcbdfd9dfd9</user-password>
+      <libraries />
+    </data-source>
+  </component>
+</project>
+

@@ -1,0 +1,10 @@
+<div class= "Sign_Form container-fluid">
+	<h3>Test Company Welcomes 
+	<% if user_signed_in? %>
+		<%=current_user.email%>
+	<% else %>
+	    All Guests
+	<% end %>
+	!
+	</h3>
+</div>

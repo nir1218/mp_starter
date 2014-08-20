@@ -1,0 +1,23 @@
+development:
+  adapter: mysql2
+  pool: 5
+  database: market_place_dev
+  username: any_dev
+  password: any_dev_pass
+  host: localhost
+
+test:
+  adapter: mysql2
+  pool: 5
+  database: market_place_test
+  username:
+  password:
+  host:
+
+production:
+  adapter: mysql2
+  pool: 5
+  database: market_place_prod
+  username:
+  password:
+  host:

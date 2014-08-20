@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> <%= yield(:title)%> </title>
+	<%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+	<%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+	<%= csrf_meta_tags %>
+</head>
+<body>
+	<header class="navbar navbar-fixed-top">
+		<div class="navbar-inner">
+			<div class="container-fluid">
+				<div class="navbar-brand pull-left"> 
+					<nav role="navigation">
+					<ul clas="nav navbar-nav navbar">
+						<il>
+							TEST
+						</il>
+						<% if user_signed_in? %>
+						<il>
+						Signed in as <%= current_user.email %> 
+						<%= link_to "Sign Out", destroy_user_session_path, :method => :delete, :class => "btn btn-default" %>
+						</il>
+						<% else %>
+						<il>
+						<%= link_to "Sign In", new_user_session_path, :class =>
+						"btn btn-primary" %>
+						</il>
+						<il> 
+						<%= link_to "Sign Up", new_user_registration_path, :class => "btn btn-default" %>
+						</il>						
+						<% end %>
+					</ul>
+					</nav>
+				</div>
+			</div>
+		</div>
+	</header>
+	<% flash.each do |name, msg| %>
+	<%= content_tag :section, msg, :id => "flash_#{name}", :class => "flash" %>
+	<% end %>
+	<%= yield %>
+</body>
+</html>

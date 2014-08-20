@@ -1,0 +1,13 @@
+<div class= "Sign_Form container-fluid">
+  <h1>Log in</h1>
+  <%= form_tag(user_session_path) do %>
+    <p>Username or Email:</br> <%= text_field_tag(:name_or_email) %></p> 
+    <p>Password:</br> <%= password_field_tag :login_password %></p> 
+    <%= submit_tag "Log In", class: "btn btn-lg btn-primary" %>
+  <% end %>
+
+  <a href="#" >
+  <%= image_tag "linkedin_32.png", :size => "32x32", :alt => "linkedin" %>
+  Linkedin
+</a>
+</div>
